@@ -15,8 +15,6 @@ services:
         command: sh -c "yarn install && yarn dev"
         environment:
             - NEXT_PUBLIC_API_URL=http://localhost:1337 # URL du backend Strapi
-            - NEXT_PUBLIC_STRAPI_PUBLIC_KEY=8a2e5aec0bc8fb3e693e1c01f3409eada4152371552d0c40ea1a319bdd292c0a51cb090f6b02bc9232c5bbacb6e98d5000202b27d72a008215d005d5ed2f65625354520b4691e68c9c54846bf0425dc8be3072b2987948855e3c4059a5b8b93c3cfb04331a83996a46455c8ade4cda851d2956499529fed02872c0accd52bfbb
-            - NEXT_PUBLIC_STRAPI_BOOKING_KEY=1918644b2784eccff6e15e833495a75de56d9197362cfd08918377fc64210bf5cd5a2b528d080497b21c5ac7531989dce6d58d747a9d3cef76635174a446d6a7839dea5a789300c975233f39016c7c8d9c68657c9cfd903fb2cfd05b70aec0c1bcf3c4ec691154dc51e0b74344cb53fdea98b21f4a31809d111453ac83ff0f10
         depends_on:
             - strapi
 

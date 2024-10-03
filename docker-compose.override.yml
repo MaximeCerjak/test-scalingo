@@ -1,0 +1,5 @@
+services:
+    frontend:
+        environment:
+            BACKEND_TOKEN_VITRINE: # TOKEN API STRAPI VITRINE
+            BACKEND_TOKEN_BOOKING: # TOKEN API STRAPI BOOKING
