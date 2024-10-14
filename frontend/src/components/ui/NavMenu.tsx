@@ -28,7 +28,7 @@ const components: { title: string; href: string; description: string }[] = [
             "Vivez des combats épiques dans une arène et/ou affrontez des hordes de zombies !",
     },
     {
-        title: "WESTR - Simulation",
+        title: "WESTR - Simulation Auto",
         href: "/",
         description:
             "Montez dans votre bolide et soyez le meilleur pilote de l'Ouest !",
