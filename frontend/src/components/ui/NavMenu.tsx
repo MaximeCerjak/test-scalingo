@@ -54,7 +54,7 @@ const help: { title: string; href: string; description: string }[] = [
     },
 ];
 
-export function NavigationMenuDemo() {
+export function Navigation() {
     return (
         <NavigationMenu className="font-monsterrat hidden lg:flex">
             <NavigationMenuList>

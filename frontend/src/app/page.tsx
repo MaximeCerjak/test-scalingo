@@ -1,3 +1,4 @@
+import getEnv from "@/utils/getEnv";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,8 +12,8 @@ export default function Home() {
                     height={1292}
                 />
             </div>
-            <section className="mx-6 md:mx-0">
-                <div className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-goodTiming text-center xl:space-y-6 space-y-2">
+            <section>
+                <div className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold font-goodTiming text-center space-y-1 lg:space-y-3 xl:space-y-6 2xl:space-x-9">
                     <div>
                         1100m² de{" "}
                         <span className="uppercase text-blueIllusion">

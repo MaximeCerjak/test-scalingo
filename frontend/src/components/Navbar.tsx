@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { AnimatedModalDemo } from "./ui/Modal";
-import { NavigationMenuDemo } from "./ui/NavMenu";
+import { Navigation } from "./ui/NavMenu";
 import Image from "next/image";
 import AnimatedMenu from "./ui/AnimatedMenu";
 import { AnimatePresence, motion } from "framer-motion";
@@ -71,7 +71,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="flex-1 py-6 flex flex-row w-full justify-center relative">
-                    <NavigationMenuDemo />
+                    <Navigation />
                     <Image
                         src={"/Icone.svg"}
                         alt={"Logo Illusion"}
