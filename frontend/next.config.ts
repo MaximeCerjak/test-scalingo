@@ -1,4 +1,6 @@
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
     images: {
         remotePatterns: [
             {
@@ -9,8 +11,26 @@ const nextConfig = {
             },
         ],
     },
-    webpack(config) {
-        // Grab the existing rule that handles SVG imports
+    experimental: {
+        //TODO : Remove this when Turbo is stable
+        turbo: {
+            rules: {
+                "*.svg": {
+                    loaders: ["@svgr/webpack"],
+                    as: "*.js",
+                },
+            },
+        },
+    },
+
+    /* turbo: {
+        rules: {
+            "*.svg": {
+                loaders: ["@svgr/webpack"],
+                as: "*.js",
+            },
+        }, */
+    /* // Grab the existing rule that handles SVG imports
         const fileLoaderRule = config.module.rules.find((rule) =>
             rule.test?.test?.(".svg")
         );
@@ -34,8 +54,8 @@ const nextConfig = {
         // Modify the file loader rule to ignore *.svg, since we have it handled now.
         fileLoaderRule.exclude = /\.svg$/i;
 
-        return config;
-    },
+        return config; */
+    /* }, */
 };
 
 export default nextConfig;
