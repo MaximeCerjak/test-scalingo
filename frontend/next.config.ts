@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         ],
     },
     experimental: {
-        //TODO : Remove this when Turbo is stable
+        //TODO : Remove this when Turbo is stable and for typed routes
         turbo: {
             rules: {
                 "*.svg": {
@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
                 },
             },
         },
+        typedRoutes: true,
     },
 
     /* turbo: {
